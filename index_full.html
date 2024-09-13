@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Black Jack</h1>
+        <button id="start-game">Démarrer la partie</button>
+        <p id="game-message"></p>
+
+        <div id="game-table">
+            <div id="dealer-cards" class="cards">
+                <h2>Croupier</h2>
+                <div id="dealer-hand"></div>
+                <p id="dealer-score">Score: 0</p>
+            </div>
+
+            <div id="player-cards" class="cards">
+                <h2>Joueur</h2>
+                <div id="player-hand"></div>
+                <p id="player-score">Score: 0</p>
+            </div>
+        </div>
+
+        <!-- Boutons d'action -->
+        <button id="btn-hit" disabled>Tirer</button>
+        <button id="btn-stand" disabled>Rester</button>
+        <button id="btn-split" disabled>Spliter</button>
+        <button id="btn-abandon" disabled>Abandonner</button>
+
+        <!-- Tableau des probabilités -->
+        <div id="probabilities">
+            <h3>Probabilités de victoire</h3>
+            <p>Joueur : <span id="player-probability">50%</span></p>
+            <p>Croupier : <span id="dealer-probability">50%</span></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
